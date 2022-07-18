@@ -1,0 +1,188 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+     #cements:hover{
+
+color: black;
+
+
+}
+.light-version h6{
+    color: #0072bc;
+    font-size: 13px;
+}
+.breadcumb--con .title {
+    font-size: 29px;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .breadcrumb-item, .breadcrumb-item.active, .breadcrumb-item > a {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.breadcumb--con .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+.light-version h6{
+    color: #0072bc;
+    font-size: 12px;
+}
+.light-version p {
+    color: black;
+    font-size: 12px;
+}
+}
+
+
+
+    
+
+
+
+
+</style>
+   <!-- ##### Welcome Area Start ##### -->
+   <div class="breadcumb-area clearfix auto-init">
+        
+    <!-- breadcumb content -->
+    <div class="breadcumb-content">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb" class="breadcumb--con text-center">
+                        <h2 class="w-text title wow fadeInUp" data-wow-delay="0.2s">Verticals</h2>
+                        <ol class="breadcrumb justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+                            <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Verticals</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Welcome Area End ##### -->
+
+
+<!-- ##### verticals Area Start ##### -->
+
+<section class="our_services_area section-padding-100-0 clearfix" id="services">
+    <div class="container">
+        
+        
+            
+
+        <div class="row" style="margin: 0px;">
+           
+            <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6 mt-4">
+                <!-- Content -->
+                <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.2s">
+                    <!-- Icon -->
+                    <div class="service_icon">
+                        <img src="{% static 'web/img/verticals/cement.png'  %}" alt="" class="width-90">
+                    </div>
+                    <h6>Cement distribution</h6>
+                    <p id="cements">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6 mt-4">
+                <!-- Content -->
+                <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.3s">
+                    <!-- Icon -->
+                    <div class="service_icon">
+                        <img src="{% static 'web/img/verticals/mtc.png'  %}" alt="" class="width-90">
+
+                    </div>
+                    <h6>Transportion & Logistics</h6>
+                    <p id="cements">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6 mt-4">
+                <!-- Content -->
+                <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.4s">
+                    <!-- Icon -->
+                    <div class="service_icon">
+                        <img src="{% static 'web/img/verticals/c--f.png'  %}" alt="" class="width-90">
+                    </div>
+                    <h6>Clearing & Forwarding</h6>
+                    <p id="cements">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6 mt-4">
+                <!-- Content -->
+                <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.2s">
+                    <!-- Icon -->
+                    <div class="service_icon">
+                        <img src="{% static 'web/img/verticals/petrol.png'  %}" alt="" class="width-90">
+                    </div>
+                    <h6>Petrolium - Retail</h6>
+                    <p id="cements">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6 mt-4">
+                <!-- Content -->
+                <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.5s">
+                    <!-- Icon -->
+                    <div class="service_icon">
+                        <img src="{% static 'web/img/verticals/gas.png'  %}" alt="" class="width-90">
+                    </div>
+                    <h6>Cooking Gas Distribution & Reatail</h6>
+                    <p id="cements">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6 mt-4">
+                <!-- Content -->
+                <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.2s">
+                    <!-- Icon -->
+                    <div class="service_icon">
+                        <img src="{% static 'web/img/verticals/builder.png'  %}" alt="" class="width-90">
+                    </div>
+                    <h6>E-commerce</h6>
+                    <p id="cements">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6 mt-4">
+                <!-- Content -->
+                <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.2s">
+                    <!-- Icon -->
+                    <div class="service_icon">
+                        <img src="{% static 'web/img/verticals/tyr.png'  %}" alt="" class="width-90">
+                    </div>
+                    <h6 id="ch">Tyres & Tubes</h6>
+                    <p id="cements">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6 mt-4">
+                <!-- Content -->
+                <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.6s">
+                    <!-- Icon -->
+                    <div class="service_icon">
+                        <img src="{% static 'web/img/verticals/mall.png'  %}" alt="" class="width-90">
+                    </div>
+                    <h6>Malls & Complexes</h6>
+                    <p id="cements">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+<!-- ##### verticals Area End ##### -->
+
+
+
+
+
+    
+    <div class="footer-bg">
+     
+
+
+{% endblock %}

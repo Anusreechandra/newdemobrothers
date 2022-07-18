@@ -1,0 +1,114 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<style>
+    /*
+      Rollover Image
+     */
+    .figure {
+        position: relative;
+        width: 360px; /* can be omitted for a regular non-lazy image */
+        max-width: 100%;
+    }
+    .figure img.image-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+    .figure:hover img.image-hover {
+      opacity: 1;
+    }
+</style>
+
+<!-- ##### Welcome Area Start ##### -->
+<div class="breadcumb-area clearfix auto-init">
+
+    <!-- breadcumb content -->
+    <div class="breadcumb-content">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center  mt-4">
+                <div class="col-12   ">
+                    <nav aria-label="breadcrumb" class="breadcumb--con text-center">
+                        <h2 class="w-text title wow fadeInUp" data-wow-delay="0.2s">Gallery</h2>
+                        <ol class="breadcrumb justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+                            <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Welcome Area End ##### -->
+<section>
+ 
+
+  <!-- Gallery -->
+<!-- <div class="row ">
+    
+    {% for gallery in image %}
+    <div class="col-12 col-sm-6 col-lg-3 mt-4">
+        <div class="single-team-member hos fadeInUp" data-wow-delay="0.2s">
+            
+            <div class="team-member-thumb hos">
+                <img src="{{gallery.image.crop.270x280}}" class="center-block " alt="">
+            </div>
+           
+        </div>
+    </div>
+    {% endfor %}
+
+    
+
+
+</div> -->
+<!-- Gallery -->
+
+
+
+ <!-- Page Content -->
+<div class="container page-top  mt-4 mb-4">
+    <div class="row">
+        {% for gallery in image %}
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb  mt-4 mb-4">
+            <!-- <a href="{{gallery.image.crop.270x280}}" class="fancybox overlay" rel="ligthbox">
+                <img  src="{{gallery.image.crop.270x280}}" class="zoom img-fluid "  alt="">
+               
+                   
+                 
+               
+            </a> -->
+            
+    <div class="figure">
+    <img class="Sirv image-main" src="{{gallery.image.crop.270x280}}">
+    <img class="Sirv image-hover" data-src="{{gallery.itwo.crop.270x280}}">
+    </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<div class="footer-bg">
+
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+
+    {% endblock %}

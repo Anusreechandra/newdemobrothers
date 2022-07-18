@@ -1,0 +1,153 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from conydor.netlify.app/index-demo-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jun 2022 06:55:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Brothers Group of companies</title>
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+  <!-- test -->
+
+
+   <!-- testimonial --> 
+   <link rel="stylesheet" href="{% static 'web/css/testimonial.css' %}">
+   <link rel="stylesheet" href="{% static 'web/css/all.min.css' %}">
+   <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}">
+     <!-- testimonial -->
+
+
+    <!-- Favicon -->
+    <link rel="icon" href=" {% static 'web/img/icons/favicon.ico'  %}">
+   
+
+    <!-- verticals -->
+
+    
+    <!-- <link rel="stylesheet" href="{% static 'web/css/verticals.css'  %}"> -->
+    <link rel="stylesheet" href="{% static 'web/css/card.css' %}">
+
+    <!-- Core Stylesheet -->
+    
+    <link rel="stylesheet" href="{% static 'web/css/style.css'  %}">
+
+    <!-- Responsive Stylesheet -->
+
+
+
+<!-- counter -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<!-- counter -->
+
+
+    <link rel="stylesheet" href="{% static 'web/css/responsive.css'  %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+
+
+
+
+    </style>
+
+</head>
+
+
+<body class="light-version">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+        <div id="dream-load"></div>
+    </div>
+</div>
+
+{% include 'web/partials/header.html' %}
+    
+{% block content %}
+
+{% endblock %}
+
+{% include 'web/partials/footer .html' %}
+
+
+    <!-- ########## All JS ########## -->
+    <script>
+        $(document).ready(function(){
+      $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+        });
+        
+        $(".zoom").hover(function(){
+            
+            $(this).addClass('transition');
+        }, function(){
+            
+            $(this).removeClass('transition');
+        });
+    });
+
+
+  
+        
+    </script>
+
+    <!-- counter -->
+    <script>
+        $(document).ready(function(){
+          $('.counter').counterUp({
+            delay: 10,
+            time: 1200
+          });
+        });
+        </script>
+    <!-- counter -->
+    
+
+    <!-- testimonial -->
+  
+    <script src="{% static 'web/js/owl.carousel.min.js'  %}"></script>
+    <script src="{% static 'web/js/j.min.js'  %}"></script>
+    
+   
+    <script src="{% static 'web/js/jquery.min.js'  %}"></script>
+    <!-- jQuery js -->
+    <script src="{% static 'web/js/jquery.min.js'  %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'web/js/popper.min.js'  %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'web/js/bootstrap.min.js'  %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'web/js/plugins.js'  %}"></script>
+    
+    <!-- script js -->
+    <script src="{% static 'web/js/script.js'  %}"></script>
+    
+    <script src="{% static 'web/js/testimonial.js'  %}"></script>
+
+
+
+
+
+
+    {% block js %} {% endblock %}
+</body>
+<!-- Mirrored from conydor.netlify.app/index-demo-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jun 2022 06:55:44 GMT -->
+</html>

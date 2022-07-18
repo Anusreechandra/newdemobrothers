@@ -1,0 +1,322 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+    @media (min-width: 320px) and (max-width: 768px) {
+.section-padding-150-0 {
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+    }
+
+    @media (min-width: 769px) and (max-width: 992) {
+.section-padding-150-0 {
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+.breadcrumb-item, .breadcrumb-item.active, .breadcrumb-item > a {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.more-btn {
+    position: relative;
+    z-index: 1;
+    min-width: 94px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 10%);
+    border-radius: 0px;
+    background: #0072bc;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.more-dots span {
+    font-weight: 600;
+    font-size: 11px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-image: linear-gradient(135deg, #846FF4 0%, #F17674 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+    }
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .breadcumb--con .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+.breadcrumb-item, .breadcrumb-item.active, .breadcrumb-item > a {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.more-dots span {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-image: linear-gradient(135deg, #846FF4 0%, #F17674 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.who-we-contant h4 {
+    font-size: 15px;
+}
+.foot-c-info{
+    font-size:10px;
+}
+.more-btn {
+    position: relative;
+    z-index: 1;
+    min-width: 94px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 10%);
+    border-radius: 0px;
+    background: #0072bc;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.light-version p {
+    color: black;
+    font-size: 11px;
+}
+.light-version h4{
+    color: #0072bc;
+    font-size: 15px;
+}
+.light-version h5{
+    color: #0072bc;
+    font-size: 12px;
+}
+
+}
+
+</style>
+   <!-- ##### Welcome Area Start ##### -->
+   <div class="breadcumb-area clearfix auto-init">
+        
+    <!-- breadcumb content -->
+    <div class="breadcumb-content">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb" class="breadcumb--con text-center">
+                        <h2 class="w-text title wow fadeInUp" data-wow-delay="0.2s">About us</h2>
+                        <ol class="breadcrumb justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+                            <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About us</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Welcome Area End ##### -->
+
+
+<!-- ##### About Us Area Start ##### -->
+<section class="about-us-area section-padding-100 clearfix" id="about">
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 offset-lg-0 col-md-12 no-padding-left">
+                <div class=" fadeInUp" data-wow-delay="0.7s">
+                    <img src="{% static 'web/img/about1.png' %}" alt="">
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 offset-lg-0">
+                <div class="who-we-contant mt-s">
+                    <div class="more-dots text-left fadeInUp" data-wow-delay="0.2s">
+                        <span class="gradient-text blue" style="font-size: 14px;">Cement Company that provides the best quality</span>
+                    </div>
+                    <h4 class="fadeInUp bold" data-wow-delay="0.3s" style="font-size: 16px;">Reliable and Dedicated Cement Company for Your
+                        Construction.</h4>
+                    <!-- <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Duis at dictum risus, non suscipit arcu. sit amet convallis nunc scelerisque in. ipsum dolor sit
+                        amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. sit amet convallis
+                        nunc scelerisque in Duis at dictum risus, non suscipit arcu. sit amet convallis nunc scelerisque
+                        in.</p><br> -->
+                    <div class="list-wrap align-items-center">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="side-feature-list-item">
+                                    <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                    <div class="foot-c-info"><br><br>Highest Volume dealer for continiues 25
+                                        years-Ramco- Cements-kerala</div>
+                                </div>
+                            </div><br>
+                            <div class="col-md-6">
+                                <div class="side-feature-list-item">
+                                    <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                    <div class="foot-c-info"><br><br>Highest Voulme Sales Award for 7 Years- HSD- Indian
+                                        Oil Corporation Limited</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="side-feature-list-item">
+                                    <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                    <div class="foot-c-info">Best Dealer of South India - Dalmia Cements</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="side-feature-list-item">
+                                    <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                    <div class="foot-c-info">Best Logistic Partner- Ramco Cements</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="side-feature-list-item">
+                                    <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                    <div class="foot-c-info">Regional Bests for Zuari, Malabar,Birla Sakthi, & Maha
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="side-feature-list-item">
+                                    <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                    <div class="foot-c-info">Best Growing Dealer-Kerala- JSW CEMENTS</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a class="btn more-btn mt-30 fadeInUp" data-wow-delay="0.6s" href="{% url 'web:aboutus' %}">Know
+                        More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</section>
+<!-- ##### About Us Area End ##### -->
+   <!-- ##### Blog Area Start ##### -->
+   <section class="blog-area section-padding-150-0">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <div class="single-blog-area fadeInUp" data-wow-delay="0.2s">
+                    <!-- Post Thumbnail -->
+                    <div class="blog_thumbnail">
+                        <img src="{% static 'web/img/blog-img/2.jpg' %}" alt="">
+                    </div>
+                    <!-- Post Content -->
+                    <div class="blog-content">
+                        
+                        <div class="post-meta">
+                            <!-- <p>By <a href="#" class="post-author">Nazrul</a> <a href="#">Apr 10, 2019</a> <a href="#" class="post-comments">7 comments</a></p> -->
+                        </div>
+                        <h4 class="post-title">How to become a successful businessman.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad voluptas tempora inventore minima consectetur fugit deserunt neque modi, culpa atque fugiat unde amet quidem, at corrupti dignissimos repudiandae, totam sapiente.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita fugit eum doloribus iste voluptatum perferendis dolorem qui! Vel magnam provident, laudantium voluptates sit, sint iure sunt harum distinctio ab, aliquam est voluptas minus id explicabo illum odio? Officia omnis minima similique, eveniet eos. Rem itaque laboriosam quas est omnis, mollitia possimus eveniet. Veritatis nihil, aliquid quisquam, laborum quis ut rem repellendus animi repellat, alias suscipit nostrum incidunt. Quis, quas.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque necessitatibus laborum eveniet eaque laboriosam in officia reprehenderit quas itaque numquam sit ipsum libero consequuntur quia non quod esse rem corporis vero, consequatur nam, labore. Assumenda dolores possimus voluptatem deleniti, ipsa doloribus voluptatibus adipisci, ex voluptatum doloremque perspiciatis sunt. A earum natus quisquam deserunt nulla saepe, cumque, distinctio fuga animi dignissimos. Fuga, autem. Rem eveniet animi repellendus voluptatibus officiis sit cum doloremque dolorem labore maxime, ipsa cumque deleniti distinctio tempora vitae eos debitis. Voluptatum enim in ab facilis sapiente, quidem numquam, maxime ex veritatis assumenda, accusamus similique.</p>
+                        <blockquote>
+                            <h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, vero excepturi repellendus quae ipsum. Cum totam cumque quis eveniet saepe nisi.</h5>
+                            <span>- Nazrul, CEO OUR COMPANY</span>
+                        </blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi earum dolores sed pariatur molestias, aliquid eligendi, non consequatur quisquam repudiandae debitis numquam? Eligendi nostrum laborum, labore minima quaerat at eius tempora quos numquam dolores cum cupiditate voluptates necessitatibus, quis esse, ea. Tempora excepturi quia magnam itaque consequuntur iusto, dolore, nulla omnis, doloremque magni, amet pariatur! Maxime libero temporibus, soluta, qui veniam laudantium cupiditate corporis similique! Consectetur rerum, fuga! Quia nam fuga magnam quas aliquam in, saepe beatae. Culpa soluta, rerum id ex voluptate veniam maxime odit ad modi odio, molestiae est deserunt assumenda voluptatibus fuga accusamus placeat a quam!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur commodi expedita accusantium sapiente culpa rem vel voluptas soluta error adipisci doloremque corporis inventore molestias architecto, iusto tempora rerum. Molestias tempora possimus ea, cumque culpa corrupti dolor harum, alias, voluptatem at ex laborum excepturi iusto asperiores optio suscipit consectetur quis quos dolorum deleniti dicta aut similique, eius fuga. Rem natus deserunt, harum? Quasi, fuga, culpa.</p>
+                    </div>
+                </div>
+
+               
+
+                
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="sidebar-area">
+
+                    
+
+                  
+                        <!-- Single Don't Miss Post -->
+                        <div class="single-dont-miss-post mb-30 fadeInUp" data-wow-delay="0.4s">
+                            <div class="dont-miss-post-thumb">
+                                <img src="img/blog-img/1.jpg" alt="">
+                            </div>
+                            <div class="dont-miss-post-content">
+                                <a href="#">EU council reunites</a>
+                                <span>Nov 29, 2020</span>
+                            </div>
+                        </div>
+                        <!-- Single Don't Miss Post -->
+                        <div class="single-dont-miss-post mb-30 fadeInUp" data-wow-delay="0.5s">
+                            <div class="dont-miss-post-thumb">
+                                <img src="{% static 'web/img/blog-img/2.jpg' %}" alt="">
+                            </div>
+                            <div class="dont-miss-post-content">
+                                <a href="#">A new way to travel the world</a>
+                                <span>March 29, 2020</span>
+                            </div>
+                        </div>
+                        <!-- Single Don't Miss Post -->
+                        <div class="single-dont-miss-post fadeInUp" data-wow-delay="0.6s">
+                            <div class="dont-miss-post-thumb">
+                                <img src="{% static 'web/img/blog-img/3.jpg' %}" alt="">
+                            </div>
+                            <div class="dont-miss-post-content">
+                                <a href="#">Why choose a bank?</a>
+                                <span>March 29, 2020</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advert Widget -->
+                    <!-- <div class="advert-widget mb-50">
+                        <div class="widget-title fadeInUp" data-wow-delay="0.7s">
+                            <h5>Sponsored Add</h5>
+                        </div>
+                        <div class="advert-thumb mb-30 fadeInUp" data-wow-delay="0.8s">
+                            <a href="#"><img src="{% static 'web/img/features/feature-2.jpg' %}" alt=""></a>
+                        </div>
+                    </div> -->
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Blog Area End ##### -->
+
+
+
+    
+    <div class="footer-bg">
+     
+
+
+{% endblock %}
